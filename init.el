@@ -9,10 +9,18 @@
 (require 'init-backup)
 (require 'init-elisp)
 
+;;======================
 ;; Load packages
-(require 'init-evil)
-(require 'init-helm)
-(require 'init-projectile)
-(require 'init-misc)
+;;======================
+
+;; General
+(require 'init-evil) ;; VIM emulator
+(require 'init-helm) ;; Find files quickly
+(require 'init-misc) ;; Line numbers, etc...
+
+;; Programming
+(require 'init-magit)       ;; Git integration
+(require 'init-gitgutter)   ;; Git gutter
+(require 'init-projectile)  ;; Find files quickly in a .git project (integrated with helm)
 
 (provide 'init)
