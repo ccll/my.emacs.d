@@ -11,5 +11,8 @@
 
 ;; Load packages
 (require 'init-evil)
+(require 'init-helm)
+(require 'init-projectile)
+(require 'init-misc)
 
 (provide 'init)
