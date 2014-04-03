@@ -1,4 +1,4 @@
-(require 'magit)
+(require-package 'magit)
 
 ;; Open magit status in full window
 (setq magit-status-buffer-switch-function 'switch-to-buffer)

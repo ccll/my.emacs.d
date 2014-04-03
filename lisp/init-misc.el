@@ -14,4 +14,7 @@
 ;; Do not wrap around lines in horizontally split windows
 (setq truncate-partial-width-windows t)
 
+;; Scroll several lines at a time
+(setq scroll-step 5)
+
 (provide 'init-misc)

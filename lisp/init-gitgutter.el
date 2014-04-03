@@ -1,3 +1,4 @@
+(require-package 'git-gutter)
 (require 'git-gutter)
 
 ;; Enable git gutter
@@ -12,12 +13,12 @@
 (setq git-gutter:deleted-sign "-- ")
 
 ;; Set color for signs
-(defvar my-git-gutter-background "lightgrey")
+(defvar gutter-background "lightgrey")
 (set-face-foreground 'git-gutter:modified "purple")
-(set-face-background 'git-gutter:modified my-git-gutter-background)
+(set-face-background 'git-gutter:modified gutter-background)
 (set-face-foreground 'git-gutter:added "green")
-(set-face-background 'git-gutter:added my-git-gutter-background)
+(set-face-background 'git-gutter:added gutter-background)
 (set-face-foreground 'git-gutter:deleted "red")
-(set-face-background 'git-gutter:deleted my-git-gutter-background)
+(set-face-background 'git-gutter:deleted gutter-background)
 
 (provide 'init-gitgutter)

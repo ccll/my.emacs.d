@@ -1,4 +1,4 @@
-(require 'evil)
+(require-package 'evil)
 
 ;; Enable evil mode
 (evil-mode 1)
