@@ -3,6 +3,9 @@
 ;; Enable git gutter
 (global-git-gutter-mode t)
 
+;; Hide gutter when there is no change
+(setq git-gutter:hide-gutter t)
+
 ;; Customize signs
 (setq git-gutter:modified-sign "!! ")
 (setq git-gutter:added-sign "++ ")
