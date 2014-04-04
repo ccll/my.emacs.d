@@ -46,4 +46,4 @@
 (add-hook 'css-mode-hook 'turn-on-css-eldoc)
 
 
-(provide 'init-less)
+(provide 'init-css)

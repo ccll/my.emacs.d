@@ -1,5 +1,6 @@
 (require-package 'magit)
 (require-package 'git-gutter)
+(require-package 'gitignore-mode)
 
 (require 'magit)
 (require 'git-gutter)
@@ -9,6 +10,11 @@
 
 ;; Bind magit key
 (global-set-key (kbd "C-c g") 'magit-status)
+
+;; Show magit-status in full screen
+(require-package 'fullframe)
+(after-load 'magit
+  (fullframe magit-status magit-mode-quit-window))
 
 ;; Enable git gutter
 (global-git-gutter-mode t)

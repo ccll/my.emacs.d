@@ -2,6 +2,8 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'init-benchmarking) ;; Measure startup time
 
+(defconst *is-a-mac* (eq system-type 'darwin))
+
 ;; Bootstrap
 (require 'init-utils)
 (require 'init-elpa)      ;; Machinery for installing required packages
@@ -24,6 +26,7 @@
 (require 'init-helm) ;; Find files quickly
 (require 'init-misc) ;; Line numbers, etc...
 (require 'init-sessions)
+(require 'init-editing-utils)
 
 ;; Programming
 (require 'init-git)         ;; Git integration
