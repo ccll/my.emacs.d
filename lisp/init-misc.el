@@ -17,4 +17,7 @@
 ;; Scroll several lines at a time
 (setq scroll-step 5)
 
+;; Do NOT show welcome screen when startup
+(setq inhibit-startup-message t)
+
 (provide 'init-misc)
