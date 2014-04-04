@@ -3,6 +3,7 @@
 (require 'init-benchmarking) ;; Measure startup time
 
 ;; Bootstrap
+(require 'init-utils)
 (require 'init-elpa)      ;; Machinery for installing required packages
 
 ;; Custom configurations
@@ -31,6 +32,6 @@
 (require 'init-auto-complete)
 
 ;; HTML/CSS/JS
-(require 'init-less)   ;; Less mode
+(require 'init-css)
 
 (provide 'init)
