@@ -25,8 +25,7 @@
 (require 'init-sessions)
 
 ;; Programming
-(require 'init-magit)       ;; Git integration
-(require 'init-gitgutter)   ;; Git gutter
+(require 'init-git)         ;; Git integration
 (require 'init-projectile)  ;; Find files quickly in a .git project (integrated with helm)
 (require 'init-flycheck)    ;; Lint for various languages
 (require 'init-auto-complete)
